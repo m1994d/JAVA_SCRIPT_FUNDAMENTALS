@@ -36,3 +36,10 @@ Esto permite proteger nuestro codigo, para que desde afuera no lo modifiquen.
 */
 
 //------------------------------
+
+
+(function(){
+
+	// Todo el codigo javaScipt
+
+}())
