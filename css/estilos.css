@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+}
+
+.contenedor{
+  display: inline-block;
+  width: 400px;
+}
+
+.texto{
+  padding: 10px;
+  background: #24b080;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.boton{
+  display: inline-block;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #24b080;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #24b080;
+}
+
+.boton:hover{
+  background: #24b080;
+  border: 2px solid #24b080;
+  color: #fff;
+}
+
+.fondo-rojo{
+  background: red;
+}
