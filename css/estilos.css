@@ -42,3 +42,53 @@ body{
 .fondo-rojo{
   background: red;
 }
+
+
+/*==========================|
+
+=        FORMULARIO        =
+
+|==========================*/
+
+  form{
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+
+  .input-group{
+    margin: 10px 0;
+  }
+
+  input[type="text"], input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+
+  input[type="radio"]{
+    margin-left: 10px;
+  }
+
+  input[type="radio"]:first-child{
+    margin-left: 0;
+  }
+
+  input[type="submit"]{
+    width: 100%;
+    background: #24b080;
+    padding: 10px;
+    border: 1px solid #24b080;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+  }
+
+  .disabled{
+    color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .disabled input, .disabled label{
+    color: #ccc;
+    cursor: not-allowed;
+  }
