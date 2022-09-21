@@ -11,7 +11,7 @@ body{
 
 .contenedor{
   display: inline-block;
-  width: 400px;
+  width: 100%;
 }
 
 .texto{
@@ -20,7 +20,8 @@ body{
   color: white;
   font-size: 20px;
   text-align: center;
-  margin: 20px auto;
+  margin: 20px;
+  max-width: 200px;
 }
 
 .boton{
@@ -91,4 +92,8 @@ body{
   .disabled input, .disabled label{
     color: #ccc;
     cursor: not-allowed;
+  }
+
+  .flexbox{ 
+    display: flex;
   }
