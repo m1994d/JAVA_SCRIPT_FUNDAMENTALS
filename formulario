@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+
+	<div class="contenedor">
+
+		<h1>Formulario</h1>
+
+		<form name="formulario" action="">
+
+			<div class="input-group">
+				<input type="text" name="nombre" id="nombre" placeholder="Nombre">
+			</div>
+
+			<div class="input-group">
+				<input type="email" name="email" id="email" placeholder="Correo">
+			</div>
+
+			<div class="input-group">
+				<label for="colorFavorito"> Marca esta opcion si tienes un color favorito</label>
+				<input type="checkbox" name="colorFavorito" id="colorFavorito">
+			</div>
+
+			<p class="disabled"> Selecciona tu color favorito</p>
+
+			<div class="input-group radio-buttons disabled">
+				<input type="radio" name="color" id="verde" disabled> <label for="verde">Verde</label>
+				<input type="radio" name="color" id="azul" disabled> <label for="azul">Azul</label>
+				<input type="radio" name="color" id="rojo" disabled> <label for="rojo">Rojo</label>
+				<input type="radio" name="color" id="otro" disabled> <label for="otro">Otro</label>
+			</div>
+
+			<input type="submit" value="Enviar">
+
+		</form>
+
+				
+	</div>
