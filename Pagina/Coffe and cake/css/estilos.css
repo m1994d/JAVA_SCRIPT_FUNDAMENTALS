@@ -1,0 +1,9 @@
+.contenedor {
+  background: #000;
+  width: 400px;
+  margin: 0 auto;
+  height: 400px;
+}
+.contenedor h1 {
+  color: #fff;
+}
