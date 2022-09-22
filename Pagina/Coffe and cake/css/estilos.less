@@ -1,0 +1,332 @@
+/*------------------------------------------------*/
+/*Variables*/
+/*------------------------------------------------*/
+
+/*Colores*/
+
+@negro-custom: #141618;
+@blanco: #fff;
+@texto-oscuro: #303133;
+@texto-claro: #777;
+@dorado: #b4975a;
+@gris-claro: #eaeaea;
+
+/*Fuentes*/
+@fuente-principal:'Playfair Display', serif;
+@fuente-secundaria:'Poppins', serif;
+
+/*------------------------------------------------*/
+/*Generales*/
+/*------------------------------------------------*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+	font-family: @fuente-principal;
+	color: @texto-oscuro;
+}
+
+.container{
+	widows: 90%;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+img{
+	vertical-align: top;
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: @texto-oscuro;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+
+	&:hover{
+		color: fade(@texto-oscuro, 50%);
+	}
+}
+
+.titulo-seccion{
+	h2{
+		font-size: 3.125rem;
+		font-weight: 400;
+		line-height: 3.6875rem;
+		margin-bottom: 1.125rem;
+		font-style: italic;
+		letter-spacing: -0.02em;
+	}
+
+	p{
+		font-size: 1.25rem;
+		color: #777;
+	}
+}
+
+/*------------------------------------------------*/
+/*Encabezado*/
+/*------------------------------------------------*/
+
+header{
+
+	.menu-bar-pc{
+		background: @blanco;
+		width: 100%;
+		position: fixed;
+		z-index: 99;
+		top: 0;
+		padding: 0 2.25rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 5.875rem;
+		border-bottom: 1px solid @gris-claro;
+
+		.logo{
+			max-width: 3.125rem;
+		}
+
+		.menu-principal{
+
+			a{
+				padding: 0 0.5625rem;
+			}
+		}
+
+		.top-redes{
+			a{
+				padding: 0 0.5625rem;				
+			}
+		}
+	}
+}
+
+/*------------------------------------------------*/
+/*Main*/
+/*------------------------------------------------*/
+
+.main{
+	margin-top: 5.875rem;
+
+	/*portada*/
+	.portada{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.col{
+			width: 50%;
+			background: @negro-custom;
+			color: @blanco;
+			display: flex;
+			flex-wrap: wrap;
+
+			.foto{
+				background-size: cover;
+				background-position: center;
+				width: 50%;
+
+				&.izq{
+					background-image: url('../image/portada 1.jpg');
+					background-position: left;
+				}
+
+				&.der{
+					background-image: url('../image/portada 4.jpg');
+					opacity: 0.8;
+				}
+
+				.overlay{
+					opacity: 0;
+					width: 100%;
+					height: 100%;
+					background: fade(@negro-custom, 40%);
+					position: relative;
+					cursor: pointer;
+					-webkit-transition: all .3s ease;
+					-o-transition: all .3s ease;
+					transition: all .3s ease;
+
+					&:hover{
+						opacity: 2;
+					}
+
+					i{
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						font-size: 1.5625rem;
+
+					}
+				}
+			}
+
+			.texto{
+				width: 50%;
+				padding: 3.375rem;
+
+				h2{
+					font-size: 1.8125rem;
+					font-weight: 400;
+					line-height: 2.6875rem;
+					margin-bottom: 1.125rem;
+				}
+
+				p{
+					font-size: 0.9375rem;
+					line-height: 1.75;
+				}
+			}
+
+			.foto-full{
+				width: 100%;
+				min-height: 15.25rem;
+				background-size: cover;
+				background-position: center;
+
+				&.izq{
+					background-image: url('../image/portada 2.jpg');
+					opacity: 0.8;					
+				}
+
+				&.der{
+					background-image: url('../image/portada 3.jpg');
+				}
+
+				.overlay{
+					opacity: 0;
+					width: 100%;
+					height: 100%;
+					background: fade(@negro-custom, 40%);
+					position: relative;
+					cursor: pointer;
+					-webkit-transition: all .3s ease;
+					-o-transition: all .3s ease;
+					transition: all .3s ease;
+
+					&:hover{
+						opacity: 2;
+					}
+
+					i{
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						font-size: 1.5625rem;
+					}
+				}
+			}
+		}
+	}
+
+	/*Nosotros*/
+
+	.nosotros{
+		padding: 5.625rem 0;
+
+		.container{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			.col.izq{
+				width: 30%;
+				border-right: 1px solid @gris-claro;
+				display: flex;
+				align-items:center;
+				padding: 5%;
+
+			}
+
+			.col.der{
+				width: 70%;
+				padding-left: 5%;
+
+				.texto{
+					p{
+						font-size: 1.125rem;
+						line-height: 1.75;
+						color: @texto-claro;
+					}
+				}
+			}
+		}
+	}
+
+	.chef{
+		background: @negro-custom;
+		padding: 5.625rem 0;
+
+		.container{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items:center;
+
+			.col{
+				width: 50%;
+
+				&.izq{
+					box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
+					overflow: hidden;
+				}
+
+				.titulo-seccion{
+					padding:3.125rem;
+					padding-right: 0;
+
+					h2{
+						color: @blanco;
+					}
+					p{
+						color: fade(@blanco, 70%);
+						padding-bottom: 1.125rem;
+						font-size: 1.125rem;
+						line-height: 1.75;
+
+						&:last-child{
+							padding-bottom: 0;
+						}
+					}
+				}
+
+				.slider{
+					width: 300%;
+					display: flex;
+
+					.slide{
+						width: 100%;
+						min-height: 400px;
+						background-size: cover;
+						background-position: center;
+
+						&.foto1{
+							background-image: url('../image/chef.jpeg');
+						}
+
+						&.foto2{
+							background-image: url('../image/chef2.jpg');
+						}
+
+						&.foto3{
+							background-image: url('../image/chef3.jpeg');
+						}
+					}
+				}
+			}
+		}
+	}
+}
